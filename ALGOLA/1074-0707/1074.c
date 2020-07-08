@@ -1,36 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
 #define _CRT_SECURE_NO_WARNINGS
+
 int cnt = 0;
 int myx = 0, myy = 0;
 void zfind(int x, int y, int size)
 {
 	if (size == 2) {
-		if (x == myx && y == myy) {
-			printf("%d\n", cnt);
+		for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 2; j++) {
+				if (x + j == myx && y + i == myy) {
+					printf("%d\n", cnt);
+				}
+				cnt++;
+			}
 		}
-		cnt++;
-		if (x + 1 == myx && y == myy) {
-			printf("%d\n", cnt);
-		}
-		cnt++;
-		if (x == myx && y + 1 == myy) {
-			printf("%d\n", cnt);
-		}
-		cnt++;
-		if (x + 1 == myx && y + 1 == myy) {
-			printf("%d\n", cnt);
-		}
-		cnt++;
 		return;
 	}
 	int s = size / 2;
-	zfind(x, y, s);
-	zfind(x + s, y, s);
-	zfind(x, y + s, s);
-	zfind(x + s, y + s, s);
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 2; j++) {
+			zfind(x + s * j, y + s * i, s);
+		}
+	}
 }
 
 int main()
