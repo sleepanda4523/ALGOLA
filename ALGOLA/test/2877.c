@@ -1,63 +1,39 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <math.h>
 
-void print(int cnt, int or )
-{
-	long answer = 0;
-	if (or==1) {
-		answer = 4;
-		for (int i = 1; i <= cnt; i++) {
-			int ten = pow(10, i);
-			answer += ten * 4;
+
+void two(long n) {
+	int size = 1;
+	int* a = (int*)malloc(sizeof(int) * size);
+	// 배열에 원소 넣기 ex) 11 => 1 1 0 1 (2로 나누고 나머지 값) 
+	for (int i = 0; n != 0; i++) {
+		a[i] = n % 2;
+		n /= 2;
+		if (n != 0) {
+			size++;
+			realloc(a, sizeof(int) * size);
 		}
 	}
-	else if (or==0) {
-		answer = 7;
-		for (int i = 1; i <= cnt; i++) {
-			int ten = pow(10, i);
-			answer += ten * 7;
+	realloc(a, sizeof(int) * (size - 1));		//맨 앞자리 없애기
+
+	for (int i = 0; i < size - 1; i++) {
+		if (a[i] == 0) {
+			a[i] = 4;
+		}
+		else if (a[i] == 1) {
+			a[i] = 7;
 		}
 	}
-	printf("%ld", answer);
-}
-int find(int* ndata, int or,int cnt)
-{
-		int zero = 0,one = 0;
-		for (int i = 0; i < cnt; i++) {
-			ndata[i] == 0 ? zero++ : one++;
-		}
-		if (or==0) {
-			return zero;
-		}
-		else if (or==1) {
-			return one;
-		}
-}
-
-void two(long n,int or) {
-	long ndata = n;
-	int a[1000] = { 0, };
-	int p = 0;
-	while (1)
-	{
-		a[p] = ndata % 2;    // 2로 나누었을 때 나머지를 배열에 저장
-		ndata /= 2;             // 2로 나눈 몫을 저장
-
-		p++;    // 자릿수 변경
-
-		if (ndata == 0)    // 몫이 0이 되면 반복을 끝냄
-			break;
+	for (int i = size - 2; i >= 0; i--) {
+		printf("%d", a[i]);
 	}
-	int cnt= find(a, or,p);
-	print(cnt, or);
+
 	free(a);
 }
 int main()
 {
 	long n;
 	scanf("%ld", &n);
-	two(n,n%2);
+	two(n+1);
 	return 0;
 }
