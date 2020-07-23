@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1402_DIV2", "1402_DIV2\1402
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11650_DIV2", "11650_DIV2\11650_DIV2.vcxproj", "{3CA3DB07-D872-499E-8248-8EC52E9EA9BA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1992_쿼드트리", "1992_쿼드트리\1992_쿼드트리.vcxproj", "{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{3CA3DB07-D872-499E-8248-8EC52E9EA9BA}.Release|x64.Build.0 = Release|x64
 		{3CA3DB07-D872-499E-8248-8EC52E9EA9BA}.Release|x86.ActiveCfg = Release|Win32
 		{3CA3DB07-D872-499E-8248-8EC52E9EA9BA}.Release|x86.Build.0 = Release|Win32
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Debug|x64.ActiveCfg = Debug|x64
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Debug|x64.Build.0 = Debug|x64
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Debug|x86.ActiveCfg = Debug|Win32
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Debug|x86.Build.0 = Debug|Win32
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x64.ActiveCfg = Release|x64
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x64.Build.0 = Release|x64
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x86.ActiveCfg = Release|Win32
+		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

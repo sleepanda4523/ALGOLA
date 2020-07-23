@@ -24,10 +24,9 @@ void two(long n) {
 			a[i] = 7;
 		}
 	}
-	for (int i = size - 2; i >= 0; i--) {
+	for (int i = size - 2; i >= 0; i--) {	//2진수가 역순으로 되어있기 때문에 반대로 출력.
 		printf("%d", a[i]);
 	}
-
 	free(a);
 }
 int main()
