@@ -52,5 +52,4 @@ void DC(int x, int y, int size)
 		DC(x + m, y + m, m);
 		printf(")");
 	}
-	
 }
