@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11650_DIV2", "11650_DIV2\11
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1992_쿼드트리", "1992_쿼드트리\1992_쿼드트리.vcxproj", "{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14494", "template2\template2.vcxproj", "{85A12D63-765E-489C-84B6-87322CC60584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x64.Build.0 = Release|x64
 		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x86.ActiveCfg = Release|Win32
 		{80E77F2D-CAA7-489C-A20A-D5EF1CF2E485}.Release|x86.Build.0 = Release|Win32
+		{85A12D63-765E-489C-84B6-87322CC60584}.Debug|x64.ActiveCfg = Debug|x64
+		{85A12D63-765E-489C-84B6-87322CC60584}.Debug|x64.Build.0 = Debug|x64
+		{85A12D63-765E-489C-84B6-87322CC60584}.Debug|x86.ActiveCfg = Debug|Win32
+		{85A12D63-765E-489C-84B6-87322CC60584}.Debug|x86.Build.0 = Debug|Win32
+		{85A12D63-765E-489C-84B6-87322CC60584}.Release|x64.ActiveCfg = Release|x64
+		{85A12D63-765E-489C-84B6-87322CC60584}.Release|x64.Build.0 = Release|x64
+		{85A12D63-765E-489C-84B6-87322CC60584}.Release|x86.ActiveCfg = Release|Win32
+		{85A12D63-765E-489C-84B6-87322CC60584}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
